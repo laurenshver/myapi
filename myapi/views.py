@@ -13,5 +13,5 @@ class SongViewSet(viewsets.ModelViewSet):
     serializer_class = SongSerializer
 
 class LyricViewSet(viewsets.ModelViewSet):
-    queryset = Lyric.objects.all().order_by('song_id')
+    queryset = Lyric.objects.all().order_by('song_id', 'order')
     serializer_class = LyricSerializer
