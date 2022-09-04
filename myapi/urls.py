@@ -4,6 +4,8 @@ from .views import *
 
 router = routers.DefaultRouter()
 router.register(r'albums', AlbumViewSet)
+router.register(r'songs', SongViewSet)
+router.register(r'lyrics', LyricViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
